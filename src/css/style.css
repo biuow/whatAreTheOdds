@@ -10,3 +10,13 @@ h1 {
 
 a {
   font-family: "Atlantic"; }
+
+.flex {
+  display: flex;
+  justify-content: space-around; }
+
+.jogar {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  display: table !important; }

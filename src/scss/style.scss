@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-$color-primary: "#000";
 $color-secundary: "#000";
 $font1: 'Atlantic';
 $font2: 'HandShop';
@@ -17,24 +15,16 @@ h1 {
 
 a {
     font-family: $font1;
-=======
-$color-primary: "#000";
-$color-secundary: "#000";
-$font1: 'Atlantic';
-$font2: 'HandShop';
-body {
-    background-image: url('/img/chalk.jpg');
-    background-position: center;
-    background-size: cover;
-    font-size: 16px;
 }
 
-h1 {
-    font-family: $font2;
-    color: #FFD700;
+.flex {
+    display: flex;
+    justify-content: space-around;
 }
 
-a {
-    font-family: $font1;
->>>>>>> origin/master
+.jogar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    display: table !important;
 }
