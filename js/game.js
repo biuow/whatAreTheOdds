@@ -46,25 +46,10 @@ var jogaDados1 = function(){
 
 	//Define as cartas
 	var dice1 = Math.trunc(Math.random()*6);
-	var dice2 = Math.trunc(Math.random()*6);
 
 	//Define as imagens
 
-	//Calcula a chance
-	var falta = 21 - (card1+card2);
-	var faltaBar = 0;
-
-	if(falta > card1)
-		faltaBar++;
-	if(falta > card2)
-		faltaBar++;
-
-	var chance = (falta*4) - faltaBar;
-
-	chance = chance/52*100;
-
-	if(chance>100)
-		chance = 100;
+	chance = 1/6;
 
 	document.getElementById("idText").text = Math.trunc(chance) + "%";
 }
@@ -73,22 +58,13 @@ var jogaDados2 = function(){
 
 	//Define as cartas
 	var dice1 = Math.trunc(Math.random()*6);
-	var dice2 = Math.trunc(Math.random()*6);
 
 	//Define as imagens
 
 	//Calcula a chance
-	var falta = 21 - (card1+card2);
-	var faltaBar = 0;
+	var falta = 7 - (dice1);
 
-	if(falta > card1)
-		faltaBar++;
-	if(falta > card2)
-		faltaBar++;
-
-	var chance = (falta*4) - faltaBar;
-
-	chance = chance/52*100;
+	var chance = falta/6*100;
 
 	if(chance>100)
 		chance = 100;
