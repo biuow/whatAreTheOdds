@@ -1,0 +1,19 @@
+$color-primary: "#000";
+$color-secundary: "#000";
+$font1: 'Atlantic';
+$font2: 'HandShop';
+body {
+    background-image: url('/img/chalk.jpg');
+    background-position: center;
+    background-size: cover;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: $font2;
+    color: #FFD700;
+}
+
+a {
+    font-family: $font1;
+}
