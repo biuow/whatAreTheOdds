@@ -1,0 +1,80 @@
+<!DOCTYPE>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jogo.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link href="https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+</head>
+
+<body class="jogo">
+
+    <h1 class="center">JOGO DE DADOS</h1>
+    <div class="container">
+
+        <aside>
+            <h2>DICAS</h2>
+            <ul>
+                <li>
+                    <p>Não pode isso</p>
+                </li>
+                <li>
+                    <p>Não pode aquilo</p>
+                </li>
+            </ul>
+            <h2 id="result">
+            </h2>
+        </aside>
+
+        <div class="row">
+            <div class=" col s5">
+                <div class="flex">
+                    <img class="game-image" id="gameItem" src="img/dice-1.png" alt="">
+                    <img class="game-image" id="gameItem2" src="" alt="">
+                    <h2>+</h2>
+                    <h2> ?</h2>
+                </div>
+                <div class="question">
+                    <p id="question">Qual a probabilidade de a soma dos dois dados ser 7?</p>
+
+                    <form name="form1" action="#">
+                        <p>
+                            <input class="with-gap" name="group1" type="radio" id="test1" />
+                            <label for="test1">0 - 25%</label>
+                        </p>
+                        <p>
+                            <input class="with-gap" name="group1" type="radio" id="test2" />
+                            <label for="test2">25% - 50%</label>
+                        </p>
+                        <p>
+                            <input class="with-gap" name="group1" type="radio" id="test3" />
+                            <label for="test3">50% - 75%</label>
+                        </p>
+                        <p>
+                            <input class="with-gap" name="group1" type="radio" id="test4" />
+                            <label for="test4">75% - 100%</label>
+                        </p>
+                    </form>
+                    <a class="waves-effect waves-light btn" onclick="validaResult();">OK!</a>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="js/game.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+</body>
+
+</html>

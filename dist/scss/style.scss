@@ -1,14 +1,40 @@
-<<<<<<< HEAD
-$color-primary: "#000";
 $color-secundary: "#000";
+$color-latte: #FFFCE8;
+$font1: 'Atlantic';
+$font2: 'HandShop';
+$font3: 'Pathway Gothic One';
 body {
-    background: $color-primary;
+    background-image: url('/img/chalk.jpg');
+    background-position: center;
+    background-size: cover;
     font-size: 16px;
-=======
-$color-primary: "#000";
-$color-secundary: "#000";
-body {
-    background: $color-primary;
-    font-size: 16px;
->>>>>>> origin/master
+}
+
+h1,
+h2 {
+    font-family: $font2;
+    color: #FFD700;
+}
+
+p {
+    font-family: $font1;
+    color: $color-latte;
+    font-size: 2rem;
+}
+
+a {
+    font-family: $font1;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.jogar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    display: table !important;
 }

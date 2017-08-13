@@ -1,0 +1,57 @@
+body {
+  background-image: url("/img/chalk.jpg");
+  background-position: center;
+  background-size: cover;
+  font-size: 16px; }
+
+h1,
+h2 {
+  font-family: "HandShop";
+  color: #FFD700; }
+
+p {
+  font-family: "Atlantic";
+  color: #FFFCE8;
+  font-size: 2rem; }
+
+a {
+  font-family: "Atlantic"; }
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.jogar {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  display: table !important; }
+
+.jogo {
+  background-image: url("/img/casinobg.jpg"); }
+  .jogo [type="radio"]:not(:checked) + label:before,
+  .jogo [type="radio"]:not(:checked) + label:after {
+    border: 2px solid #FFFCE8; }
+  .jogo [type="radio"]:checked + label:after,
+  .jogo [type="radio"].with-gap:checked + label:before,
+  .jogo [type="radio"].with-gap:checked + label:after {
+    border: 2px solid #B8B42D; }
+  .jogo [type="radio"]:checked + label:after,
+  .jogo [type="radio"].with-gap:checked + label:after {
+    background-color: #B8B42D; }
+  .jogo [type="radio"]:not(:checked) + label,
+  .jogo [type="radio"]:checked + label {
+    font-size: 2rem;
+    color: #FFFCE8;
+    font-family: "Atlantic"; }
+  .jogo aside {
+    float: right;
+    background-image: url("/img/chalk.jpg");
+    padding: 1vh 1vw;
+    background-size: cover;
+    border: 10px solid #7d7d7d; }
+  .jogo .question a {
+    float: right; }
+  .jogo .game-image {
+    max-width: 33%; }
