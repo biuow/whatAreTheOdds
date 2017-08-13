@@ -1,5 +1,5 @@
 body {
-  background-image: url("/img/chalk.jpg");
+  background-image: url("../img/chalk.jpg");
   background-position: center;
   background-size: cover;
   font-size: 16px; }

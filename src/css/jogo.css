@@ -1,5 +1,5 @@
 body {
-  background-image: url("/img/chalk.jpg");
+  background-image: url("../img/chalk.jpg");
   background-position: center;
   background-size: cover;
   font-size: 16px; }
@@ -29,7 +29,7 @@ a {
   display: table !important; }
 
 .jogo {
-  background-image: url("/img/casinobg.jpg"); }
+  background-image: url("../img/casinobg.jpg"); }
   .jogo [type="radio"]:not(:checked) + label:before,
   .jogo [type="radio"]:not(:checked) + label:after {
     border: 2px solid #FFFCE8; }
@@ -47,7 +47,7 @@ a {
     font-family: "Atlantic"; }
   .jogo aside {
     float: right;
-    background-image: url("/img/chalk.jpg");
+    background-image: url("../img/chalk.jpg");
     padding: 1vh 1vw;
     background-size: cover;
     border: 10px solid #7d7d7d; }
