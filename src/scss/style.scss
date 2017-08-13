@@ -2,6 +2,7 @@ $color-secundary: "#000";
 $color-latte: #FFFCE8;
 $font1: 'Atlantic';
 $font2: 'HandShop';
+$font3: 'Pathway Gothic One';
 body {
     background-image: url('/img/chalk.jpg');
     background-position: center;
@@ -16,7 +17,7 @@ h2 {
 }
 
 p {
-    font-family: $font1;
+    font-family: $font3;
     color: $color-latte;
     font-size: 2rem;
 }
