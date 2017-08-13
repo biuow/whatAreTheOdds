@@ -1,4 +1,5 @@
 $color-secundary: "#000";
+$color-latte: #FFFCE8;
 $font1: 'Atlantic';
 $font2: 'HandShop';
 body {
@@ -12,6 +13,12 @@ h1,
 h2 {
     font-family: $font2;
     color: #FFD700;
+}
+
+p {
+    font-family: $font1;
+    color: $color-latte;
+    font-size: 2rem;
 }
 
 a {
