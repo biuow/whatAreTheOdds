@@ -1,10 +1,21 @@
 var jogaCartas = function(){
 
+	document.getElementById("question").text = ""
+
 	//Define as cartas
 	var card1 = Math.trunc(Math.random()*13);
 	var card2 = Math.trunc(Math.random()*13);
 
 	//Define as imagens
+	if(Math.random()*2){
+		var naipe = "_espadas"
+	}else{
+		var naipe = "_copas"
+	}
+
+	document.getElementById("gameItem").src = "img/"+card1+naipe+".png"
+
+	document.getElementById("gameItem2").src = "img/"+card2+naipe+".png"
 
 	if(card1 >= 10)
 		card1 = 10;
@@ -44,10 +55,13 @@ var jogaCartas = function(){
 
 var jogaDados1 = function(){
 
+	document.getElementById("question").text = ""
+
 	//Define as cartas
 	var dice1 = Math.trunc(Math.random()*6);
 
 	//Define as imagens
+	document.getElementById("gameItem").src = "img/dice-"+dice1+".png"
 
 	chance = 1/6;
 
@@ -56,10 +70,13 @@ var jogaDados1 = function(){
 
 var jogaDados2 = function(){
 
+	document.getElementById("question").text = ""
+
 	//Define as cartas
 	var dice1 = Math.trunc(Math.random()*6);
 
 	//Define as imagens
+	document.getElementById("gameItem").src = "img/dice-"+dice1+".png"
 
 	//Calcula a chance
 	var falta = 7 - (dice1);
