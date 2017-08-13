@@ -9,6 +9,11 @@ h2 {
   font-family: "HandShop";
   color: #FFD700; }
 
+p {
+  font-family: "Atlantic";
+  color: #FFFCE8;
+  font-size: 2rem; }
+
 a {
   font-family: "Atlantic"; }
 
