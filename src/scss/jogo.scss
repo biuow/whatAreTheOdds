@@ -1,3 +1,4 @@
+@import "style.scss";
 $color-gold: #B8B42D;
 $color-latte: #FFFCE8;
 .jogo {
@@ -19,5 +20,18 @@ $color-latte: #FFFCE8;
     [type="radio"]:checked+label {
         font-size: 2rem;
         color: $color-latte;
+        font-family: $font1;
+    }
+    aside {
+        float: right;
+        background-image: url('/img/chalk.jpg');
+        padding: 1vh 1vw;
+        background-size: cover;
+        border: 10px solid #7d7d7d;
+    }
+    .question {
+        a {
+            float: right;
+        }
     }
 }
