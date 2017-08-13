@@ -1,0 +1,23 @@
+$color-gold: #B8B42D;
+$color-latte: #FFFCE8;
+.jogo {
+    background-image: url('/img/casinobg.jpg');
+    [type="radio"]:not(:checked)+label:before,
+    [type="radio"]:not(:checked)+label:after {
+        border: 2px solid $color-latte;
+    }
+    [type="radio"]:checked+label:after,
+    [type="radio"].with-gap:checked+label:before,
+    [type="radio"].with-gap:checked+label:after {
+        border: 2px solid $color-gold;
+    }
+    [type="radio"]:checked+label:after,
+    [type="radio"].with-gap:checked+label:after {
+        background-color: $color-gold;
+    }
+    [type="radio"]:not(:checked)+label,
+    [type="radio"]:checked+label {
+        font-size: 2rem;
+        color: $color-latte;
+    }
+}
