@@ -5,6 +5,8 @@ var stagechance = 0;
 	jogaDados1();
 })()
 
+//teste
+
 var jogaCartas = function(){
 
 	document.getElementById("question").text = "Qual a chance da próxima carta passar de 21?"
