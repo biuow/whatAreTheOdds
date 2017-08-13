@@ -1,3 +1,7 @@
+var stage = 1;
+var stagechance = 0;
+
+
 var jogaCartas = function(){
 
 	document.getElementById("question").text = ""
@@ -50,7 +54,8 @@ var jogaCartas = function(){
 	if(chance>100)
 		chance = 100;
 
-	document.getElementById("idText").text = Math.trunc(chance) + "%";
+	stagechance = Math.trunc(chance);
+	//document.getElementById("idText").text = Math.trunc(chance) + "%";
 }
 
 var jogaDados1 = function(){
@@ -65,7 +70,8 @@ var jogaDados1 = function(){
 
 	chance = 1/6;
 
-	document.getElementById("idText").text = Math.trunc(chance) + "%";
+	stagechance = Math.trunc(chance);
+	//document.getElementById("idText").text = Math.trunc(chance) + "%";
 }
 
 var jogaDados2 = function(){
@@ -86,5 +92,6 @@ var jogaDados2 = function(){
 	if(chance>100)
 		chance = 100;
 
-	document.getElementById("idText").text = Math.trunc(chance) + "%";
+	stagechance = Math.trunc(chance);
+	//document.getElementById("idText").text = Math.trunc(chance) + "%";
 }
