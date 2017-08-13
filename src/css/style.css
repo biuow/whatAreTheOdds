@@ -10,7 +10,7 @@ h2 {
   color: #FFD700; }
 
 p {
-  font-family: "Pathway Gothic One";
+  font-family: "Atlantic";
   color: #FFFCE8;
   font-size: 2rem; }
 
@@ -19,7 +19,8 @@ a {
 
 .flex {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  align-items: center; }
 
 .jogar {
   margin-left: auto;
