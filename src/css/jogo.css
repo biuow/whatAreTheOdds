@@ -1,0 +1,16 @@
+.jogo {
+  background-image: url("/img/casinobg.jpg"); }
+  .jogo [type="radio"]:not(:checked) + label:before,
+  .jogo [type="radio"]:not(:checked) + label:after {
+    border: 2px solid #FFFCE8; }
+  .jogo [type="radio"]:checked + label:after,
+  .jogo [type="radio"].with-gap:checked + label:before,
+  .jogo [type="radio"].with-gap:checked + label:after {
+    border: 2px solid #B8B42D; }
+  .jogo [type="radio"]:checked + label:after,
+  .jogo [type="radio"].with-gap:checked + label:after {
+    background-color: #B8B42D; }
+  .jogo [type="radio"]:not(:checked) + label,
+  .jogo [type="radio"]:checked + label {
+    font-size: 2rem;
+    color: #FFFCE8; }
