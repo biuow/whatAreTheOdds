@@ -1,10 +1,13 @@
 var stage = 1;
 var stagechance = 0;
 
+(function(){
+	jogaDados1();
+})()
 
 var jogaCartas = function(){
 
-	document.getElementById("question").text = ""
+	document.getElementById("question").text = "Qual a chance da próxima carta passar de 21?"
 
 	//Define as cartas
 	var card1 = Math.trunc(Math.random()*13);
@@ -60,7 +63,7 @@ var jogaCartas = function(){
 
 var jogaDados1 = function(){
 
-	document.getElementById("question").text = ""
+	document.getElementById("question").text = "Qual a chance da soma dos dados ser 7?"
 
 	//Define as cartas
 	var dice1 = Math.trunc(Math.random()*6);
@@ -76,7 +79,7 @@ var jogaDados1 = function(){
 
 var jogaDados2 = function(){
 
-	document.getElementById("question").text = ""
+	document.getElementById("question").text = "Qual a chance da soma dos dados ser maior que 7?"
 
 	//Define as cartas
 	var dice1 = Math.trunc(Math.random()*6);
@@ -94,4 +97,35 @@ var jogaDados2 = function(){
 
 	stagechance = Math.trunc(chance);
 	//document.getElementById("idText").text = Math.trunc(chance) + "%";
+}
+
+var validaResult = function(){
+
+	var result = 0;
+	var correct = false;
+
+		  if(document.getElementById('test1').checked){
+		var result = 1;
+	}else if(document.getElementById('test2').checked){
+		var result = 2;
+	}else if(document.getElementById('test3').checked){
+		var result = 3;
+	}else if(document.getElementById('test4').checked){
+		var result = 4;
+	}
+	
+	if(stagechance < 25 && result == 1)
+		correct = true;
+	if(stagechance >= 25 && stagechance < 50 && result == 2)
+		correct = true;
+	if(stagechance >= 50 && stagechance < 75 && result == 3)
+		correct = true;
+	if(stagechance >= 75 && stagechance <= 100 && result == 4)
+		correct = true;
+
+	if(correct)
+		document.getElementById('result').text = "Parabéns, você acertou! A chance é de "+ stagechance +".";
+	else
+		document.getElementById('result').text = "Você errou. O chance correta é "+ stagechance +".";
+
 }
